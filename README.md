@@ -1,4 +1,10 @@
-### Hi there 👋
+#### Welcome to my github profile!
+
+- 👨🏻‍🎓 I'm a student of [Hainan University (Hainanu)](https://ha.hainanu.edu.cn/home2020/).
+- 🎓 I'm going to study  in [School of Cyber Science and Engineering, SouthEast Unniversity(Nanjing)](https://www.seu.edu.cn/) this year.
+- 📫 You can reach me at [solar1s@163.com](mailto:solar1s@163.com).
+- 😀 Very glad to share and communicate with you ; )
+
 
 <!--
 **chenzongyao200127/chenzongyao200127** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
