@@ -1,9 +1,8 @@
 #### Welcome to my github profile!
 
-- 👨🏻‍🎓 I'm a student of [Hainan University (Hainanu)](https://ha.hainanu.edu.cn/home2020/).
-- 🎓 I'm going to study  in [School of Cyber Science and Engineering, SouthEast Unniversity(Nanjing)](https://www.seu.edu.cn/) this year.
+- 🎓 I'm a postgraduate student of [School of Cyber Science and Engineering, SouthEast Unniversity(Nanjing)](https://www.seu.edu.cn/)
 - 📫 You can reach me at [solar1s@163.com](mailto:solar1s@163.com).
-- 😀 Very glad to share and communicate with you ; )
+- 😀 Nice to meet you and best wishes for you, my friends :)
 
 
 <!--
