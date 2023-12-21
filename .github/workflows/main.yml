@@ -1,26 +1,33 @@
+# GitHub Action 的名称
 name: Progress Bar CI
 
+# 定义触发 GitHub Action 的事件
 on:
-  workflow_dispatch:
+  workflow_dispatch: # 允许手动触发
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '0 */6 * * *' # 每6小时自动触发一次
 
+# 定义工作流中的工作
 jobs:
-  build:
+  build: # 工作名称
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # 运行环境
 
+    # 定义工作步骤
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js
+    - uses: actions/checkout@v2 # 检出仓库代码
+
+    - name: Use Node.js # 设置 Node.js 环境
       uses: actions/setup-node@v1
       with:
-        node-version: '14.x'
-    - name: Update README.md
-      run: node index.js > README.md
-    - name: Commit change & Push
+        node-version: '14.x' # 使用 Node.js 版本 14.x
+
+    - name: Update README.md # 更新 README.md 文件
+      run: node index.js > README.md # 执行 index.js 并将输出重定向到 README.md
+
+    - name: Commit change & Push # 提交更改并推送
       run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '2319251792+github-actions[bot]@users.noreply.github.com'
-          git commit -am "bot: update README.md automatically"
-          git push
+          git config user.name 'github-actions[bot]' # 配置 GitHub 用户名
+          git config user.email '2319251792+github-actions[bot]@users.noreply.github.com' # 配置 GitHub 用户邮箱
+          git commit -am "bot: update README.md automatically" # 提交更改
+          git push # 推送到仓库

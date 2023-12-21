@@ -1,43 +1,41 @@
-# GitHub Action for generating a contribution graph with a snake eating your contributions.
-
+# GitHub Action 的名称
 name: Generate Snake
 
-# Controls when the action will run. This action runs every 6 hours.
-
+# 控制此动作何时运行。该动作每6小时运行一次。
 on:
   schedule:
-      # every 6 hours
+      # 每6小时
     - cron: "0 */6 * * *"
 
-# This command allows us to run the Action automatically from the Actions tab.
+  # 允许我们从 GitHub Actions 选项卡中手动触发此动作
   workflow_dispatch:
 
-# The sequence of runs in this workflow:
+# 工作流中的任务序列
 jobs:
-  # This workflow contains a single job called "build"
+  # 该工作流包含一个名为 "build" 的工作
   build:
-    # The type of runner that the job will run on
+    # 工作将在此类型的运行器上执行
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
+    # 步骤代表一系列将作为工作的一部分执行的任务
     steps:
 
-    # Checks repo under $GITHUB_WORKSHOP, so your job can access it
+    # 检查 $GITHUB_WORKSHOP 下的仓库，以便工作可以访问它
       - uses: actions/checkout@v2
 
-    # Generates the snake  
+    # 生成蛇形贡献图
       - uses: Platane/snk@master
         id: snake-gif
         with:
           github_user_name: chenzongyao200127
-          # these next 2 lines generate the files on a branch called "output". This keeps the main branch from cluttering up.
+          # 下面两行在名为 "output" 的分支上生成文件。这避免了主分支的混乱。
           gif_out_path: dist/github-contribution-grid-snake.gif
           svg_out_path: dist/github-contribution-grid-snake.svg
 
-     # show the status of the build. Makes it easier for debugging (if there's any issues).
+     # 显示构建的状态。便于调试（如果有任何问题）。
       - run: git status
 
-      # Push the changes
+      # 推送更改
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
@@ -45,9 +43,10 @@ jobs:
           branch: master
           force: true
 
+      # 使用 GitHub Pages 动作
       - uses: crazy-max/ghaction-github-pages@v2.1.3
         with:
-          # the output branch we mentioned above
+          # 我们前面提到的输出分支
           target_branch: output
           build_dir: dist
         env:
