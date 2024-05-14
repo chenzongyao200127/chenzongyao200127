@@ -1,23 +1,24 @@
-# 工作流名称
+# Workflow name
 name: GitHub-Profile-Summary-Cards
 
 on:
   schedule:
-    # 每24小时触发一次
-    - cron: "0 * * * *"
-  # 开启手动触发
+    # Trigger every 24 hours
+    - cron: "0 0 * * *"  # This triggers at midnight UTC every day
+  # Enable manual trigger
   workflow_dispatch:
 
 jobs:
-  # job id
+  # Job id
   build:
     runs-on: ubuntu-latest
     name: generate
 
     steps:
-      # 第一步，checkout 当前项目
+      # Step 1: Checkout the current repository
       - uses: actions/checkout@v2
-      # 第二步，引入目标 action: vn7n24fzkq/github-profile-summary-cards仓库中的 `release` 分支
+      
+      # Step 2: Use the action from vn7n24fzkq/github-profile-summary-cards repository, release branch
       - uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

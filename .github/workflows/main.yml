@@ -1,33 +1,38 @@
-# GitHub Action 的名称
+# GitHub Action's name
 name: Progress Bar CI
 
-# 定义触发 GitHub Action 的事件
+# Define the events that trigger the GitHub Action
 on:
-  workflow_dispatch: # 允许手动触发
+  workflow_dispatch: # Allows manual triggering
   schedule:
-    - cron: '0 */6 * * *' # 每6小时自动触发一次
+    - cron: "0 */6 * * *" # Automatically triggers every 6 hours
 
-# 定义工作流中的工作
+# Define jobs in the workflow
 jobs:
-  build: # 工作名称
+  build: # Job name
+    runs-on: ubuntu-latest # Running environment
 
-    runs-on: ubuntu-latest # 运行环境
-
-    # 定义工作步骤
+    # Define the job steps
     steps:
-    - uses: actions/checkout@v2 # 检出仓库代码
+      - name: Checkout repository code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0 # Fetch all history to ensure proper git operations
 
-    - name: Use Node.js # 设置 Node.js 环境
-      uses: actions/setup-node@v1
-      with:
-        node-version: '14.x' # 使用 Node.js 版本 14.x
+      - name: Use Node.js # Set up Node.js environment
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14.x" # Use Node.js version 14.x
 
-    - name: Update README.md # 更新 README.md 文件
-      run: node index.js > README.md # 执行 index.js 并将输出重定向到 README.md
+      - name: Update README.md # Update README.md file
+        run: node index.js > README.md # Execute index.js and redirect output to README.md
 
-    - name: Commit change & Push # 提交更改并推送
-      run: |
-          git config user.name 'github-actions[bot]' # 配置 GitHub 用户名
-          git config user.email '2319251792+github-actions[bot]@users.noreply.github.com' # 配置 GitHub 用户邮箱
-          git commit -am "bot: update README.md automatically" # 提交更改
-          git push # 推送到仓库
+      - name: Commit changes & Push # Commit changes and push
+        run: |
+          git config --global user.name 'github-actions[bot]' # Configure GitHub username
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com' # Configure GitHub user email
+          git add README.md # Add the updated README.md to the commit
+          git commit -m "bot: update README.md automatically" # Commit the changes
+          git push origin HEAD # Push to the current branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Use GitHub token for authentication
