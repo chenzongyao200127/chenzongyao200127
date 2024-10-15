@@ -1,36 +1,36 @@
-// 获取当前年份
+// Get the current year
 const thisYear = new Date().getFullYear()
 
-// 计算当前年份开始时的时间戳（毫秒）
+// Calculate the timestamp (milliseconds) at the start of the current year
 const startTimeOfThisYear = new Date(`${thisYear}-01-01T00:00:00+00:00`).getTime()
 
-// 计算当前年份结束时的时间戳（毫秒）
+// Calculate the timestamp (milliseconds) at the end of the current year
 const endTimeOfThisYear = new Date(`${thisYear}-12-31T23:59:59+00:00`).getTime()
 
-// 计算当前时刻到年初的进度比例
+// Calculate the progress ratio from the start of the year to the current moment
 const progressOfThisYear = (Date.now() - startTimeOfThisYear) / (endTimeOfThisYear - startTimeOfThisYear)
 
-// 调用 generateProgressBar 函数以生成当前年份的进度条
+// Call the generateProgressBar function to generate the progress bar for the current year
 const progressBarOfThisYear = generateProgressBar()
 
-// 定义一个函数来生成进度条
+// Define a function to generate the progress bar
 function generateProgressBar() {
-  // 设置进度条的总长度为 30 个字符
+  // Set the total length of the progress bar to 30 characters
   const progressBarCapacity = 30
 
-  // 根据年份进度计算已经过去的进度条长度
+  // Calculate the length of the progress bar that has passed based on the year's progress
   const passedProgressBarIndex = parseInt(progressOfThisYear * progressBarCapacity)
 
-  // 生成进度条，已过去的时间用 '█' 表示，剩余的时间用 '▁' 表示
+  // Generate the progress bar, with the elapsed time represented by '█' and the remaining time by '▁'
   const progressBar =
     '█'.repeat(passedProgressBarIndex) +
     '▁'.repeat(progressBarCapacity - passedProgressBarIndex)
 
-  // 返回格式化后的进度条字符串
+  // Return the formatted progress bar string
   return `{ ${progressBar} }`
 }
 
-// 创建一个 README 字符串，包含个人信息和年份进度条
+// Create a README string that includes personal information and the year's progress bar
 const readme = `\
 ### Hi there 👋
 
@@ -56,5 +56,5 @@ const readme = `\
 \
 `
 
-// 在控制台打印生成的 README 内容
+// Print the generated README content to the console
 console.log(readme)
