@@ -43,7 +43,7 @@ const readme = `\
 ---
 ### My GitHub Contributions    
 
-![](https://raw.githubusercontent.com/chenzongyao200127/chenzongyao200127/main/assets/github-contribution-grid-snake.svg)          
+![github-contribution-grid-snake](https://raw.githubusercontent.com/chenzongyao200127/chenzongyao200127/output/github-snake.svg)      
 
 ### About me   
 
@@ -52,6 +52,11 @@ const readme = `\
 - 💼 I have interned with the security teams at Tencent and Alibaba Cloud.  
 - 📫 You can reach me at solar1s@163.com.  
 - 😀 Nice to meet you and best wishes for you! :)
+
+### GitHub Estatísticas
+
+| [![chenzongyao200127's github stats](https://github-readme-stats.vercel.app/api?username=chenzongyao200127&show_icons=true&theme=merko&hide_border=true)](https://github.com/upupnoah)  |[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chenzongyao200127&layout=compact&theme=merko&hide_border=true&hide=css,html,ruby)](https://github.com/upupnoah)|
+| ------------- | ------------- |
 
 \
 `
