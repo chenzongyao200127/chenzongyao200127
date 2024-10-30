@@ -1,10 +1,10 @@
 ### Hi there 👋
 
-⏳ Year progress { ████████████████████████▁▁▁▁▁▁ } 82.82 %
+⏳ Year progress { ████████████████████████▁▁▁▁▁▁ } 82.93 %
 
 ---
 
-⏰ Updated on Wed, 30 Oct 2024 02:29:39 GMT
+⏰ Updated on Wed, 30 Oct 2024 12:14:27 GMT
 
 ---
 ### My GitHub Contributions    
@@ -15,9 +15,9 @@
 
 - 🎓 I'm a postgraduate student at the School of Cyber Science and Engineering, SouthEast University (Nanjing).  
 - 💻 My interests lie in system security, Rust, malware detection, program analysis, and operating systems.  
-- 💼 I have interned with the security and OS teams at Tencent and Alibaba Cloud.  
+- 💼 I have interned with the security & OS teams at Tencent and Alibaba Cloud.  
 - 📫 You can reach me at solar1s@163.com.  
-- 😀 Nice to meet you and best wishes for you! :)
+- 💐 Nice to meet you and best wishes for you! :)
 
 ### GitHub Estatísticas
 
