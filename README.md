@@ -1,10 +1,10 @@
 ### Hi there 👋
 
-⏳ Year progress { ████████████████████▁▁▁▁▁▁▁▁▁▁ } 69.46 %
+⏳ Year progress { ████████████████████▁▁▁▁▁▁▁▁▁▁ } 69.52 %
 
 ---
 
-⏰ Updated on Thu, 11 Sep 2025 12:15:34 GMT
+⏰ Updated on Thu, 11 Sep 2025 18:10:22 GMT
 
 ---
 ### My GitHub Contributions    
@@ -13,9 +13,9 @@
 
 ### About me   
 
-- 🎓 ~~I'm a postgraduate student at the School of Cyber Science and Engineering, SouthEast University (Nanjing).~~
-- 💼 I now work for Alibaba Cloud (Aliyun), mainly focus on Operating System Security.  
-- 💻 My interests lie in system security, Rust, malware detection, program analysis, and operating systems.
+- 🎓 I'm a postgraduate student at the School of Cyber Science and Engineering, SouthEast University (Nanjing).  
+- 💻 My interests lie in system security, Rust, malware detection, program analysis, and operating systems.  
+- 💼 I have interned with the security & OS teams at Tencent and Alibaba Cloud.  
 - 📫 You can reach me at solar1s@163.com.  
 - 💐 Nice to meet you and best wishes for you! :)
 
