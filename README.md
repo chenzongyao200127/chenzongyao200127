@@ -1,10 +1,10 @@
 ### Hi there 👋
 
-⏳ Year progress { █████████████████████████████▁ } 99.52 %
+⏳ Year progress { █████████████████████████████▁ } 99.59 %
 
 ---
 
-⏰ Updated on Tue, 30 Dec 2025 06:16:07 GMT
+⏰ Updated on Tue, 30 Dec 2025 12:19:28 GMT
 
 ---
 ### My GitHub Contributions
@@ -15,8 +15,8 @@
 
 - 🎓 Master of Computer Science and Cyber Security.
 - 💻 My interests lie in Operating Systems, System Security and Rust.
-- 💼 Current Working at Alibaba Apsara Lab
-- 📫 You can reach me at solar1s@163.com or chenzongyao200127(wechat)
+- 💼 Current Working at Alibaba Apsara Lab.
+- 📫 You can reach me at solar1s@163.com or chenzongyao200127 (wechat app)
 - 💐 Glad to connect with you ;)
 
 ### GitHub Estatísticas
