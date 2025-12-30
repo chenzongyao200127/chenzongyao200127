@@ -21,7 +21,7 @@
 
 ### GitHub Estatísticas
 
-| [![chenzongyao200127's github stats](https://github-readme-stats.vercel.app/api?username=chenzongyao200127&show_icons=true&theme=merko&hide_border=true)](https://github.com/upupnoah)  |[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chenzongyao200127&layout=compact&theme=merko&hide_border=true&hide=css,html,ruby)](https://github.com/upupnoah)|
+| [![solar1s's github stats](https://github-readme-stats-three-phi-10.vercel.app/api?username=chenzongyao200127&show_icons=true&theme=merko&hide_border=true)](https://github.com/chenzongyao200127)  |[![Top Langs](https://github-readme-stats-three-phi-10.vercel.app/api/top-langs/?username=chenzongyao200127&layout=compact&theme=merko&hide_border=true&hide=css,html,ruby)](https://github.com/chenzongyao200127)|
 | ------------- | ------------- |
 
 
